@@ -1,4 +1,4 @@
-package solution
+package golang
 
 func twoSum(nums []int, target int) []int {
 	hash := make(map[int]int)
