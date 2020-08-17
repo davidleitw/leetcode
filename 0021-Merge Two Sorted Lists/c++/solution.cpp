@@ -12,7 +12,7 @@ using namespace std;
  * };
  */
 
-
+// Recursive
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
@@ -34,3 +34,28 @@ public:
 
 // 4 ms, faster than 96.65% of C++ online submissions for Merge Two Sorted Lists. 
 // 14.3 MB, less than 95.02% of C++ online submissions for Merge Two Sorted Lists.
+
+
+// Iterative
+class Solution {
+public:
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+        ListNode temp(0);
+        ListNode *tail = &temp;
+        while(l1 && l2) {
+            if(l1->val < l2->val) {
+                tail->next = l1;
+                l1 = l1->next;
+            }else {
+                tail->next = l2;
+                l2 = l2->next;
+            }
+            tail = tail->next;
+        }
+        
+        if(l1) tail->next = l1;
+        if(l2) tail->next = l2;
+        
+        return temp.next;
+    }
+};
