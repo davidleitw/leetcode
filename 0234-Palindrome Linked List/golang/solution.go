@@ -37,5 +37,5 @@ func isPalindrome(head *ListNode) bool {
 	return true
 }
 
-// Runtime: 12 ms, faster than 95.56% of Go online submissions for Palindrome Linked List.
-// Memory Usage: 6 MB, less than 76.76% of Go online submissions for Palindrome Linked List.
+// Runtime: 8 ms, faster than 100.00% of Go online submissions for Palindrome Linked List.
+// Memory Usage: 6 MB, less than 92.43% of Go online submissions for Palindrome Linked List.
