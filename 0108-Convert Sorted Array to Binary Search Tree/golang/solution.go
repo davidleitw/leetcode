@@ -19,3 +19,6 @@ func sortedArrayToBST(nums []int) *TreeNode {
 		Right: sortedArrayToBST(nums[middle+1:]),
 	}
 }
+
+// Runtime: 88 ms, faster than 98.32% of Go online submissions for Convert Sorted Array to Binary Search Tree.
+// Memory Usage: 247.7 MB, less than 5.33% of Go online submissions for Convert Sorted Array to Binary Search Tree.
