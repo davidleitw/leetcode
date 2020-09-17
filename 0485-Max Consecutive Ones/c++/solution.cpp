@@ -25,4 +25,4 @@ public:
 };
 
 // Runtime: 60 ms, faster than 99.88% of C++ online submissions for Max Consecutive Ones.
-// Memory Usage: 36.3 MB, less than 48.85% of C++ online submissions for Max Consecutive Ones.
+// Memory Usage: 36.3 MB, less than 48.85% of C++ online submissions for Max Consecutive Ones. 
